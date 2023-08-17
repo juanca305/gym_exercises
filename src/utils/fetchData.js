@@ -7,14 +7,6 @@ export const exerciseOptions = {
     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
   }
 };
-//const axios = require('axios');
-
-// try {
-// 	const response = await axios.request(options);
-// 	console.log(response.data);
-// } catch (error) {
-// 	console.error(error);
-// }
 
 export const fetchData = async (url, options) => {
     const response = await fetch (url, options);
