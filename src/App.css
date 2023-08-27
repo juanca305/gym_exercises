@@ -91,6 +91,10 @@ body {
   .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
   }
+
+.search-btn {
+  outline: none;
+}
   
   .search-btn:hover {
     color: #FF2625 !important;
@@ -141,4 +145,19 @@ body {
     .exercise-card {
       width: 280px;
     }
+
   }
+
+  /* @media screen and (max-width:512px) {
+
+    .css-yx0nvq-MuiButtonBase-root-MuiPaginationItem-root {
+      margin: 0 0;
+      min-width: 35px;
+      height: 35px;
+      border-radius: 17.5px;
+    }
+    
+    } */
+
+  
+    

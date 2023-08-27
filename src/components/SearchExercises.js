@@ -43,17 +43,18 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
       </Typography>
       <Box>
         <TextField
+        height= '76px'
         sx={{
           input: {
             fontWeight: '700',
             border: 'none',
             borderRadius: '4px'
           },
-          width: {lg: '800px', xs: '350px'},
+          width: {lg: '800px', sm: '380px', xs: '240px'},
           backgroundColor: 'white',
           borderRadius: '40px',
         }} 
-          height= '76px' 
+           
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder='Seach Exercises'
@@ -67,11 +68,13 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
             textTransform: 'none',
             width: {lg: '175px', xs: '80px'},
             fontSize: {lg: '20px', xs: '14px'},
-            height: '56px',
+            height:'56px',
+            
             // position: 'absolute',
             // right: '0'
           }}
           onClick={handleSearch}
+          
         >Search</Button>
       </Box>
 
