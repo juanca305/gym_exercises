@@ -27,7 +27,7 @@ body {
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     right: 80px;
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
@@ -123,7 +123,8 @@ body {
   
     .left-arrow,
     .right-arrow {
-      position: static !important;
+       position: static !important; 
+     
     }
   
     .hero-banner-img {
@@ -148,16 +149,15 @@ body {
 
   }
 
-  /* @media screen and (max-width:512px) {
+   @media screen and (max-width:900px) {
 
-    .css-yx0nvq-MuiButtonBase-root-MuiPaginationItem-root {
-      margin: 0 0;
-      min-width: 35px;
-      height: 35px;
-      border-radius: 17.5px;
-    }
-    
-    } */
+    .left-arrow,
+    .right-arrow {
+      /* position: static !important; */
+       margin-left: 24px !important; 
+     } 
+
+    } 
 
   
     
