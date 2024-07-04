@@ -6,7 +6,9 @@ import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
-  //console.log(exercises);
+  console.log(exercises);
+
+  
 
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
@@ -26,7 +28,8 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
         let exercisesData = [];
 
         if (bodyPart === 'all') {
-          exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/', exerciseOptions);
+          // exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/', exerciseOptions);
+          exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?limit=10&offset=0', exerciseOptions);
         } else {
           exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
         }
